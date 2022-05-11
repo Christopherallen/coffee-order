@@ -3,14 +3,14 @@ import Image from 'next/image'
 import styles from '../styles/SelectCoffeeType.module.css'
 
 
-function SelectCoffeeType({data, setData, setPage}) {
+function SelectCoffeeType({data, setData, setPage}: any) {
 
   return (
     <div className={styles.grid}>
       <div
         onClick={() => {
           setData({...data, coffeeType: "Espresso"});
-          setPage((currPage) => currPage + 1 );
+          setPage((currPage: any) => currPage + 1 );
         }}
         className={
           data.coffeeType === "Espresso"
@@ -30,7 +30,7 @@ function SelectCoffeeType({data, setData, setPage}) {
       <div
         onClick={() => {
           setData({...data, coffeeType: "Coffee"});
-          setPage((currPage) => currPage + 1 );
+          setPage((currPage: any) => currPage + 1 );
         }}
         className={
           data.coffeeType === "Coffee"
@@ -50,7 +50,7 @@ function SelectCoffeeType({data, setData, setPage}) {
       <div
         onClick={() => {
           setData({...data, coffeeType: "Americano"});
-          setPage((currPage) => currPage + 1 );
+          setPage((currPage: any) => currPage + 1 );
         }}
         className={
           data.coffeeType === "Americano"
@@ -70,7 +70,7 @@ function SelectCoffeeType({data, setData, setPage}) {
       <div
         onClick={() => {
           setData({...data, coffeeType: "Americano"});
-          setPage((currPage) => currPage + 1 );
+          setPage((currPage: any) => currPage + 1 );
         }}
         className={
           data.coffeeType === "Caffe Crema"
@@ -90,7 +90,7 @@ function SelectCoffeeType({data, setData, setPage}) {
       <div
         onClick={() => {
           setData({...data, coffeeType: "Ristretto"});
-          setPage((currPage) => currPage + 1 );
+          setPage((currPage: any) => currPage + 1 );
         }}
         className={
           data.coffeeType === "Ristretto"
