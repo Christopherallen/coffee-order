@@ -1,0 +1,12 @@
+.title {
+  margin: 0 auto 50px;
+  max-width: 900px;
+  line-height: 1.15;
+  font-size: 2rem;
+  text-align: center;
+  color: #3D2C22;
+}
+
+.footer {
+  text-align: center;
+}

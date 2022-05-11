@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Form from '../components/Form'
 
 const Home: NextPage = () => {
   return (
@@ -13,70 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Good Morning. What kind of coffee would you like?
-        </h1>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <Image
-              src="/coffee.svg"
-              alt="coffee"
-              width={100}
-              height={100}
-            />
-            <h2>Espresso</h2>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <Image
-              src="/coffee.svg"
-              alt="coffee"
-              width={100}
-              height={100}
-            />
-            <h2>Coffee</h2>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <Image
-              src="/coffee.svg"
-              alt="coffee"
-              width={100}
-              height={100}
-            />
-            <h2>Americano</h2>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <Image
-              src="/coffee.svg"
-              alt="coffee"
-              width={100}
-              height={100}
-            />
-            <h2>Caffe Crema</h2>
-          </a>
-
-            <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <Image
-              src="/coffee.svg"
-              alt="coffee"
-              width={100}
-              height={100}
-            />
-            <h2>Ristretto</h2>
-          </a>
-        </div>
+        <Form />
       </main>
     </div>
   )
