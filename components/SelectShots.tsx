@@ -10,7 +10,7 @@ function SelectShots() {
     { value: 'five', label: '5' }
   ]
   return (
-     <Select options={options} />
+     <Select isSearchable={false} options={options} />
   )
 }
 
