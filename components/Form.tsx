@@ -28,13 +28,16 @@ function Form() {
         />
       )
     } else if (page === 1) {
-      return <SelectShots />
+      return (
+        <SelectShots
+          data={data}
+          setData={setData}
+        />
+      )
     } else {
       return <OrderName />
     }
   }
-
-  console.log(data);
 
   return(
     <div className="form">
