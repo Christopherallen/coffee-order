@@ -8,5 +8,15 @@
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+}
+
+.button__prev {
+  border-right: 1px solid #888;
 }

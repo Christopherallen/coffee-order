@@ -14,3 +14,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #3D2C22;
+  color: #fff;
+  font-weight: 800;
+  box-shadow: none;
+  border: none;
+}
+
+.button:disabled {
+  background-color: #aaa;
+  color: #ccc;
+}

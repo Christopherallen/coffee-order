@@ -48,6 +48,7 @@ function Form() {
         </div>
         <div className={styles.footer}>
           <button
+            className={`${styles.button__prev} button`}
             disabled={page == 0}
             onClick={() => {
             setPage((currPage) => currPage - 1 );
@@ -55,6 +56,7 @@ function Form() {
             Prev
           </button>
           <button
+            className={`${styles.button__next} button`}
             disabled={page === FormTitles.length -1}
             onClick={() => {
               setPage((currPage) => currPage + 1 );

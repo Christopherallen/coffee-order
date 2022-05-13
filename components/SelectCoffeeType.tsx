@@ -69,7 +69,7 @@ function SelectCoffeeType({data, setData, setPage}: any) {
 
       <div
         onClick={() => {
-          setData({...data, coffeeType: "Americano"});
+          setData({...data, coffeeType: "Caffe Crema"});
           setPage((currPage: any) => currPage + 1 );
         }}
         className={
