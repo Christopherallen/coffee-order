@@ -1,13 +1,16 @@
 import React from 'react';
+import Select from 'react-select'
 
 function SelectShots() {
+  const options = [
+    { value: 'one', label: '1' },
+    { value: 'two', label: '2' },
+    { value: 'three', label: '3' },
+    { value: 'four', label: '4' },
+    { value: 'five', label: '5' }
+  ]
   return (
-    <select value="one">
-      <option value="one">One</option>
-      <option value="two">Two</option>
-      <option value="three">Three</option>
-      <option value="four">Four</option>
-    </select>
+     <Select options={options} />
   )
 }
 

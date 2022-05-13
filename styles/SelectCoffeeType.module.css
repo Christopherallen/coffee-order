@@ -29,6 +29,11 @@
   border-color: #3D2C22;
 }
 
+.active {
+  background-color: #3D2C22;
+  color: #fff;
+}
+
 .card:hover {
   cursor: pointer;
 }
